@@ -9,10 +9,10 @@ html {
     margin: 0;
     border: border-box;
 }
+
 .navbar{
     height: 120px;
-    background-image: linear-gradient(to bottom,rgb(40, 40, 40),rgb(30,30,30),rgb(20,20,20),rgb(5,5,5));
-    color:white;
+    color:var(--dwlb);
     display: flex; 
     align-items:center;
     justify-content: space-evenly;
@@ -40,46 +40,67 @@ html {
 
 .subtitle {
     font-family: sans-serif;
+    background-color: rgba(255,255,255,0.0);
 }
 .border {
     border : 1px solid transparent;
 }
-.border:hover {
-    border: 1px solid rgba(255, 255, 255, 0.768);
-}
 .navi {
-    width: 70%;
     text-align: right;
+    flex:1;
 }
 .pad {
-    color:white;
-    margin: 8px;
-    background-color: transparent;
-    border-bottom: 1.5px transparent ;
+    color:var(--dwlb);
+    background-color: rgba(255,255,255,0.1);
+    border-bottom: 1.5px transparent;
     border-top: 0px;
-    border-left: 0px;
-    border-right: 0px; 
-    text-decoration: none;   
+    border-left:0px;
+    border-right:0px; 
+    text-decoration: none;
+    backdrop-filter: blur(10px); 
+    margin-right:10px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;
 }
    
 .pad:hover {
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: 1.5px solid ;
-    height: 25px;
-    border-image: linear-gradient(to right,red,rgb(252, 250, 250),red);
+    border-bottom: 2px solid ;
+    border-image: var(--borderimg);
+    background-color: rgba(255, 255, 255, 0.5);
     border-image-slice: 1;
 }
 .pad:active {
-    font-size: 20px;
+    font-size: 16px;
+}
+.dropdown{
+    display: inline-block;
+}
+.content{
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    display: none;
+    margin-left: 8px;
+    padding-top: 8px;
+}
+.dropdown a{
+    display:block;
+    padding: 5px;
+    margin-top: 5px;
+}
+.dropdown:hover .content{
+    display:block;
 }
 
 .body{
     height: 980px;
-    background-image: url("Banner.png");
-    background-size :cover ;
-    background-attachment: fixed;
+    background-image: var(--banner);
+    background-size :cover;
+    background-attachment:fixed;
 }
 .title2 {
     font-size: 26px;
@@ -100,10 +121,15 @@ html {
     color:white;
     text-align: center;
     line-height: 1.785em;
+    backdrop-filter:blur(10px);
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.06);
 }
 .videobox {
     height: 900px;
-    background-image: linear-gradient(to bottom right,black,rgb(10, 1, 44),rgb(150, 0, 0),rgb(10,1,44),black);
+    background-image: var(--videoboxbki);
+    background-color: var(--videoboxbki);
+    padding-left:0.7cm;
 }
 .video {
     padding: 48px 80px 0px;
@@ -115,7 +141,7 @@ html {
     height: 200px;
 }
 .info {
-    color: white;
+    color: var(--dwlb);
     height: 156px;
     width: 360px;
     padding: 14px 0px 0px;
@@ -138,31 +164,31 @@ html {
     font-size: 13.5px;
 }
 .button {
-    color: white;
+    color:var(--dwlb);
     background-color: transparent ;
-    margin: 0px 500px ;
+    margin: 0px 525px ;
     height: 64px ;
     width: 160px ;
     font-size: 16px;
-    border: 1px white solid;
+    border: 1px var(--dwlb) solid;
 }
 .line {
-    margin: 30px 10px;
     margin-bottom: 0px;
+    color:var(--dwlb);
 }
 .contact {
     display:flex
 }
 .contact {
-    color:white;
-    background-image: url("con-img.jpeg");
-    background-size: cover;
+    color:var(--dwlb);
+    background-color:var(--contactbki);
     
 }
 .coninfo {
     margin: 30px 400px ;
     text-align: center; 
     text-justify: center;
+    background-color: transparent;
 
        
 }
@@ -170,8 +196,8 @@ html {
     font-size: 40px ;
 }
 .footer {
-    background-image: linear-gradient(to top,rgb(40, 40, 40),rgb(30,30,30),rgb(20,20,20),rgb(5,5,5));
-    color: white;
+    background-color:var(--footerbki);
+    color:var(--dwlb);
     text-align: center;
     text-justify: bottom;
     padding-top: 40px;
@@ -210,4 +236,52 @@ html {
     padding-left: 80px;
     padding-right: 80px;
     font-size: 17px;
+}
+:root{
+    --dwlb:black;
+    --videoboxbki:rgb(255, 0, 0);
+    --contactbki:transparent;
+    --footerbki:transparent;
+    --banner:url("3.jpg");
+}
+.LightMode{
+    --dwlb:black;
+    --videoboxbki:transparent;
+    --contactbki:transparent;
+    --footerbki:rgb(197, 197, 197);
+    --banner:url("3.jpg");
+    --borderimg:linear-gradient(to right,blue,rgb(252, 250, 250),blue);
+}
+.GameMode{
+    --dwlb: white;
+    --videoboxbki:linear-gradient(to bottom right,rgb(0, 0, 0),rgb(24, 0, 112),rgb(189, 0, 0),rgb(24, 0, 112),rgb(0, 0, 0));
+    --contactbki:black;
+    --footerbki:black;
+    --banner:url("Banner.png");
+    --borderimg:linear-gradient(to right,red,rgb(252, 250, 250),red);
+    
+}
+.Yellow{
+    --banner:url("1.jpg");
+    --dwlb:black;
+    --videoboxbki:#b7f7a5;
+    --footerbki:#009f8f;
+    --borderimg:linear-gradient(to right,green,rgb(252, 250, 250),green);
+    --contactbki:rgb(255, 137, 47);
+}
+.Blue{
+    --banner:url("2.jpg");
+    --dwlb:black;
+    --videoboxbki:rgb(255, 190, 201);
+    --contactbki:rgb(237, 158, 214);
+    --footerbki:#3f3fa3;
+    --borderimg:linear-gradient(to right,pink,rgb(252, 250, 250),pink);
+}
+.DarkMode{
+    --banner:url("4.jpg");
+    --dwlb: white;
+    --videoboxbki:rgba(0, 0, 0, 0.6);
+    --contactbki:rgba(0, 0, 0, 0.6);
+    --footerbki:black;
+    --borderimg:linear-gradient(to right,rgb(255, 255, 255),rgb(0, 0, 0),rgb(255, 255, 255));
 }

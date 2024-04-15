@@ -8,7 +8,7 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/03aa3f4ce7.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body">
     <header>
         <div class="navbar">
             <div class="ln">
@@ -24,21 +24,26 @@
                 <a class="pad" href="index.html">Home</a>
                 <a href="About.html" class="pad">About</a>  
                 <a href="index.html#videobox" class="pad">Videos</a>  
-                <button class="pad">deathbladegamerz51907@gmail.com</button>
                 <a href="https://www.facebook.com/people/DeathBlade-GamerZ/100066814943296/"class="fa-brands fa-facebook pad"></a>
                 <a class="fa-brands fa-instagram pad"></a>
                 <a href="https://www.youtube.com/@deathbladegamerz51907"class="fa-brands fa-youtube pad"></a>
+                <div class="dropdown">
+                <button id="mode" class="pad">Light Mode</button>
+                    <div class="content">
+                        <a id="Light Mode" onclick="lightmode()" class="pad">Light Mode</a>
+                        <a id="Yellow" onclick="Yellow()" class="pad">Yellow</a>
+                        <a id="Blue" onclick="Blue()" class="pad">Blue</a>
+                        <a id="Dark Mode" onclick="DarkMode()" class="pad">Dark Mode</a>
+                        <a id="Game Mode" onclick="GameMode()" class="pad">Game Mode</a> 
+                    </div>
+                </div>           
             </div>
             
         </div>
     </header>
-    <div class="body">
-        <div class="title2">
-            <p1>All About Gaming & Tech</p1>
-        </div>
-        <div class="sub2">
-             <p1>Welcome to the official website of DeathbladeGamerZ. Take a look at the videos below, and browse through the new and exciting content. The videos are constantly being updated, so be sure to check back for more!</p1>
-       </div>
+    
+    <div class="title2"><p1>All About Gaming & Tech</p1></div>
+    <div class="sub2"><p1>Welcome to the official website of DeathbladeGamerZ. Take a look at the videos below, and browse through the new and exciting content. The videos are constantly being updated, so be sure to check back for more!</p1></div>
     <div id="videobox" class="videobox">
         <div class="video">
             <div class="box">
@@ -130,21 +135,25 @@
             <button onclick="load()" class="button" type="button">Load More</button>
         </div>
     </div>
-        <div class="contact">
+    <hr class="line">
+    <div class="contact">
             <div class="conimg"></div>
             <div class="coninfo">
                 <h2 class="git">GET IN TOUCH</h2>
                 <br>
                 <p2 class="cont">Please feel free to reach out with any questions, comments, or concerns.</p2>
                 <br>
+                <br>
                 <a href="https://www.facebook.com/people/DeathBlade-GamerZ/100066814943296/" class="fa-brands fa-facebook pad"></a>
                 <a  class="fa-brands fa-instagram pad"></a>
                 <a href="https://www.youtube.com/@deathbladegamerz51907" class="fa-brands fa-youtube pad"></a>
                 <br>
-                <p2 class="mail">deathbladegamerz51907@gmail.com</p2>
+                <br>
+                <a class="pad">deathbladegamerz51907@gmail.com</a>
 
             </div>
-        </div>
+    </div>
+    <hr class="line">
     <footer class="footer">
         <p2 class="foot">&#169 2024 by DeathbladeGamerZ. Proudly created by DeathbladeGamerZ</p2>
     </footer>
