@@ -239,7 +239,7 @@ html {
 }
 :root{
     --dwlb:black;
-    --videoboxbki:rgb(255, 0, 0);
+    --videoboxbki:transparent;
     --contactbki:transparent;
     --footerbki:transparent;
     --banner:url("3.jpg");
