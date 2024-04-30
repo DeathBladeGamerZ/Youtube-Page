@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #457B9D;
+    text-align: center;
+}
+h1{
+    color: #F1FAEE;
+    justify-content: center;
+    align-items: center;
+    background-color: #E63946;
+    text-align: center;
+    height:2cm;
+    display: flex;
+    font-size: 50px;
+}
+.con{
+    display: flex;
+    height: 12cm;
+    justify-content: center;
+    align-content: center;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    height: 10cm;
+    width: 10cm;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.65cm;
+    margin-top: 20px;
+}
+.box{
+    height: 2.5cm;
+    width: 2.5cm;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+    color:black;
+    font-size: 50px;
+    background-color: #A8DADC;
+}
+.resetbtn {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+.newbtn {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+.winner {
+    height : 17cm;
+}
+.winmsg {
+    color:#DAFFED;
+    font-size: 50px;
+    padding: 60px;
+}
+.hide {
+    display: none;
+}
+#turnX {
+    margin-left: 20cm;
+    font-size: 40px;
+    margin-top: 5cm;
+    position: fixed;
+    color:#DAFFED;
+}
+#turnO {
+    margin-right: 20cm;
+    font-size: 40px;
+    margin-top: 5cm;
+    position: fixed;
+    color:#DAFFED;
+}
