@@ -1,26 +1,3 @@
-<<<<<<< HEAD:Youtube/script.js
-let t = document.getElementById("topbtn");
-function scrollFunction()
-{
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
-    {
-        t.style.display= "block";
-    }
-    else
-    {
-        t.style.display= "none";
-    }
-}
-function topfunction() {
-    document.documentElement.scrollTop = 0;
-}
-function load() 
-{
-   window.open("https://www.youtube.com/@deathbladegamerz51907");
-    
-}
-window.onscroll= function(){scrollFunction()};
-=======
 let t = document.getElementById("topbtn");
 function scrollFunction()
 {
@@ -72,4 +49,3 @@ function GameMode()
     document.body.classList.add("GameMode");
     document.getElementById("mode").innerHTML="Game Mode";
 }
->>>>>>> 6e66495f74c16ae6857f8066973d53c2c08c03e1:script.js
