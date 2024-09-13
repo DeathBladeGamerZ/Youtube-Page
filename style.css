@@ -5,10 +5,6 @@
 html {
     scroll-behavior:smooth !important;
 }
-* {
-    margin: 0;
-    border: border-box;
-}
 
 .navbar{
     height: 120px;
@@ -18,13 +14,14 @@ html {
     justify-content: space-evenly;
 }
 .ln {
-    width: 300px;
+    width: 30vw;
     display: flex;
     align-items: center;
 }
 .nav-logo {
     height: 80px;
     width: 85px;
+    border : 1px solid transparent;
 }
 .logo {
     background-image: url("navlogo.png");
@@ -42,12 +39,9 @@ html {
     font-family: sans-serif;
     background-color: rgba(255,255,255,0.0);
 }
-.border {
-    border : 1px solid transparent;
-}
 .navi {
     text-align: right;
-    flex:1;
+    width: 65vw;
 }
 .pad {
     color:var(--dwlb);
@@ -58,7 +52,7 @@ html {
     border-right:0px; 
     text-decoration: none;
     backdrop-filter: blur(10px); 
-    margin-right:10px;
+    margin-left:10px;
     padding: 6px 12px;
     border-radius: 5px;
     font-size: 16px;
@@ -97,14 +91,13 @@ html {
 }
 
 .body{
-    height: 980px;
     background-image: var(--banner);
-    background-size :cover;
+    background-size :cover; 
     background-attachment:fixed;
 }
 .title2 {
     font-size: 26px;
-    height: 600px;
+    height: 60vh;
     font-size: 24px;
     color: white;
     display: flex;
@@ -114,10 +107,7 @@ html {
 }
 .sub2 {
     font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 10vh 10vw 15vh;
     color:white;
     text-align: center;
     line-height: 1.785em;
@@ -125,27 +115,25 @@ html {
     border-radius: 20px;
     background-color: rgba(255,255,255,0.06);
 }
-.videobox {
-    height: 900px;
+.video {
     background-image: var(--videoboxbki);
     background-color: var(--videoboxbki);
-    padding-left:0.7cm;
-}
-.video {
-    padding: 48px 80px 0px;
-    display: grid;
-    grid-template-columns: 370px 370px 370px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmin;
 }
 .video1 {
     width: 325px;
     height: 200px;
+    margin: auto;
 }
 .info {
     color: var(--dwlb);
     height: 156px;
-    width: 360px;
     padding: 14px 0px 0px;
-    margin:6px 20px 0px;
+    margin:0px 10px 0px;
     text-overflow: ellipsis;
 }
 .cname {
@@ -166,14 +154,14 @@ html {
 .button {
     color:var(--dwlb);
     background-color: transparent ;
-    margin: 0px 525px ;
+    margin: 50px;
     height: 64px ;
     width: 160px ;
     font-size: 16px;
     border: 1px var(--dwlb) solid;
 }
 .line {
-    margin-bottom: 0px;
+    margin:0px;
     color:var(--dwlb);
 }
 .contact {
@@ -182,10 +170,11 @@ html {
 .contact {
     color:var(--dwlb);
     background-color:var(--contactbki);
+    padding-bottom: 3vh;
     
 }
 .coninfo {
-    margin: 30px 400px ;
+    margin: auto;
     text-align: center; 
     text-justify: center;
     background-color: transparent;
@@ -194,6 +183,7 @@ html {
 }
 .git {
     font-size: 40px ;
+    
 }
 .footer {
     background-color:var(--footerbki);
@@ -202,18 +192,6 @@ html {
     text-justify: bottom;
     padding-top: 40px;
     padding-bottom: 30px;
-}
-#topbtn {
-    font-size: 18px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: red;
-    color:white;
-    border-radius: 20px;
-    height: 30px;
-    width: 50px;
-    border: none;
 }
 /*About*/
 .bodyabout {
